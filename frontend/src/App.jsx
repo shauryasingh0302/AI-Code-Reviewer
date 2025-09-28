@@ -16,7 +16,7 @@ function App() {
 
   async function reviewCode() {
     try {
-      const response = await axios.post("https://ai-code-reviewer-backend-6a4m.onrender.com/ai/get-review", { code });
+      const response = await axios.post("BACKEND_URL/ai/get-review", { code });
       setReview(response.data);
     } catch (err) {
       console.error("Error reviewing code:", err);
